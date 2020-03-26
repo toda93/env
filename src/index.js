@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-module.exports = function dotenvJSON(options) {
+module.exports = function config(options) {
   const jsonFile = (options && options.path) || ".env.json";
 
   const jsonString = fs.readFileSync(path.resolve(process.cwd(), jsonFile), {
